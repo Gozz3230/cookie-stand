@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+  <title>Cookie Stand</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
 <body>
-    <nav>
-        <a href="index.html">Sales Page</a>
-    </nav>
+  <header>
+    <h1 id="cookie-stand">Cookie Stand</h1>
+    <a id="home" href="index.html">Home</a>
+
+  </header>
+
+  <main>
+    <h2 id="sales">Store Location Sold Cookies Per Hour</h2>
+    <section id="salmon-cookies"></section>
+
+    <table id="sales-table"></table>
+
+    <form id="my-form">
+      <fieldset>
+        <legend>New Store Form</legend>
+
+        <label for="location">Location</label>
+        <input id="location" type="text" placeholder="ex. Arizona" name="location" required>
+
+        <label for="minCustomer">Minimum # of Customers Per Hour</label>
+        <input id="minCustomer" type="number" placeholder="ex. 400" name="minCustomer" required>
+
+        <label for="maxCustomer">Maximum # of Customers Per Hour</label>
+        <input id="maxCustomer" type="number" placeholder="ex. 400" name="maxCustomer" required>
+
+        <label for="averageCookieBought">Average Cookie Bought Per Hour</label>
+        <input id="averageCookieBought" type="text" placeholder="ex. 4.1" name="averageCookieBought" required>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+
+
+  </main>
+  <footer>&copy; Code Fellows</footer>
+  <script src="js/app.js"></script>
 </body>
+
 </html>
